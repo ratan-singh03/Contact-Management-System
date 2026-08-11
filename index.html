@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="brand">Contact Management</div>
+    <nav>
+        <a href="/">Contact Form</a>
+        <a href="/contacts.html">View Contacts</a>
+    </nav>
+</header>
+
+<main class="page">
+    <section class="card form-card">
+        <h1>Get in Touch</h1>
+        <p class="subtitle">Send us a message using the form below.</p>
+
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message" required></textarea>
+
+            <button type="submit">Submit Message</button>
+            <p id="status" class="status"></p>
+        </form>
+    </section>
+</main>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
